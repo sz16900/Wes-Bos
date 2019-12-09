@@ -102,3 +102,40 @@ a.button {
 /*
   Overall Layout
 */
+
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* wih auto, we tell it to take as much space as it needs */
+.app-wrap > * {
+  flex: 1 1 auto;
+}
+
+/* HEADER */
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* CONTENT */
+
+/* with overflow-y, we tell the content to take the rest of space "auto" part takes what it needs */
+.content {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ICON BAR */
+
+.icon-bar {
+  display: flex;
+}
+
+.icon-bar a  {
+  flex: 1;
+}
